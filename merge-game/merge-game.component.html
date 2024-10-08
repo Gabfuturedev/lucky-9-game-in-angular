@@ -1,0 +1,37 @@
+
+<div class="container">
+    <h1>Lucky 9</h1>
+    <hr>
+    <div class="playerSide">
+        <h2>Player</h2>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Player Card</h5>
+              <div *ngFor="let card of playerSide; let i = index" class="card" class="card-image">
+                <p class="card">{{card}}</p>
+            </div>
+              <h6 href="#">Total : {{playerScore}}</h6>
+        </div>
+    </div>
+
+    <div class="ComputerSide">
+        <h2>Computer</h2>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Computer Card</h5>
+              <div *ngFor="let card of computerSide; let i = index" class="card" class="card-image">
+                <p class="card" >{{card}}</p>
+            </div>
+              <h6 href="#">Total : {{computerScore}}</h6>
+            </div>
+    
+            
+    </div>
+
+    <div class="gameMessage">
+        <p>{{gameMessage}}</p>
+    </div>
+
+    <button (click)="startGame()" class="btn btn-primary" >New Game</button>
+</div>
+

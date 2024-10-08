@@ -1,0 +1,21 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+.card{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #CED4DA; /* Light Gray */
+}.container{
+    text-align: center;
+}.container {
+    background-color: #F8F9FA; /* Light Gray */
+}
+
+h1, h2 {
+    color: #007BFF; /* Blue */
+}
+
+.card-title, .gameMessage {
+    color: #343A40; /* Dark Gray */
+}
