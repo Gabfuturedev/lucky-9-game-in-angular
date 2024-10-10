@@ -1,0 +1,20 @@
+<div class="game-container">
+    <div class="cups-container">
+      <div 
+        *ngFor="let cup of cups; let i = index" 
+        class="cup" 
+        (click)="guess(i)" 
+        [ngStyle]="{'transform': getCupPosition(i)}"
+      >
+        <img [src]="'/images/' + cup" class="cup-image" />
+        <img 
+          *ngIf="revealBall && ballIndex === i" 
+          [src]="'/images/' + ballImage" 
+          class="ball-image"
+        />
+      </div>
+    </div>
+    <p>{{ message }}</p>
+    <button (click)="shuffleCups()">Shuffle Cups</button>
+  </div>
+  

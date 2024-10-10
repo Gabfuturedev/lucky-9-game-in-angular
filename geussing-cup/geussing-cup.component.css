@@ -1,0 +1,60 @@
+.game-container {
+  max-width: 90%; /* Make it responsive */
+  margin: auto; /* Center the game */
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cups-container {
+  width: 100%;
+  max-width: 100%; /* Make sure it takes full width */
+  height: 30vh; /* Relative height */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.cups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw; /* Space between cups relative to viewport width */
+}
+
+.cup {
+  cursor: pointer;
+  display: inline-block;
+  width: 15vw; /* Make cups responsive to viewport width */
+  height: 15vw;
+  position: relative;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cup-image {
+  width: 100%; /* Make the image fill the cup */
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.ball-image {
+  width: 5vw;
+  height: auto;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.cup-image:hover {
+  transform: scale(1.1);
+}
